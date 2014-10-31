@@ -22,7 +22,7 @@ gulp.task('server', function() {
   });
 });
 
-Busca errores en el JS y nos los muestra por pantalla
+//Busca errores en el JS y nos los muestra por pantalla
 gulp.task('jshint', function() {
   return gulp.src('./app/scripts/**/*.js')
     .pipe(jshint('.jshintrc'))

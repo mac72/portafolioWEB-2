@@ -1,0 +1,95 @@
+doctype
+html(lang='es')
+head
+  meta(charset='UTF-8')
+  title Mi portafolio
+  link(rel="stylesheet" href="stylesheets/main.css")
+body
+  //-================ variables =================
+  -var coleccion = [{titulo: 'dibujo a acuarela', valores: 'acuarela', imgs: 5}, {titulo: 'dibujo con tinta', valores: 'tinta', imgs: 5}, {titulo: 'abecedario', valores: 'abecedario', imgs: 6}, {titulo: 'dragones', valores: 'dragones', imgs: 3}, {titulo: 'la villa de los dulces', valores: 'dulces', imgs: 7}, {titulo: 'retratos a pintura', valores: 'retratos', imgs: 8}, {titulo: 'diseño de revistas', valores: 'revistas', imgs: 5}, {titulo: 'sitios web', valores: 'sitiowww', imgs: 4}, {titulo: 'dibujos de la ciudad', valores: 'city', imgs: 6}, {titulo: 'libros de arte', valores: 'influencia', imgs: 5}, {titulo: 'luz de neon', valores: 'luces', imgs: 5}, {titulo: 'ilustraciones de libros', valores: 'libros', imgs: 5}, {titulo: 'arte flat design', valores: 'flat', imgs: 5}, {titulo: 'rostros psicodelicos', valores: 'rostroscolor', imgs: 5}]
+
+  //-===============variables =======================
+  nav#menu-container
+    #logo-menu
+      img(src='img/logo1.png' alt='logo')
+      p#logo-name Mi portafolio
+      p#logo-desc Desarrollador web
+    ul#menu
+      each val in ['Inicio', 'Blog', 'Trabajo', 'Quien soy', 'Contacto']
+        li: a(href='#')=val
+  //fin menu-container
+
+  #main-container
+    section.seccion#seccion-inicio
+      #contenido-inicio
+        img(src='img/logo2.png' alt='logo inicio')
+        p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br/><br/>Quis aperiam porro tenetur beatae asperiores eaque magnam numquam distinctio quidem itaque, eius facere, dolorem eum vitae, consequatur unde modi vel sequi.
+        .separador
+        video(width='380' height='240' controls)
+          source(src='vdo/HTML5 - Article.mp4' type='video/mp4')
+          | Su explorador no soporta este formato de video.
+    //fin seccion-inicio
+
+    section.seccion#seccion-blog
+      h2 Blog
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ut, hic inventore alias porro repudiandae, laudantium praesentium in sit labore, magnam perspiciatis omnis ea voluptatum rem similique debitis minus unde!
+    //fin seccion-blog
+
+    section.seccion#seccion-trabajo
+      h2 Trabajo
+      #slider-miniatura
+        -var i = 1
+        while i < 7
+          img(src='img/slide0' + i + '.jpg', alt='slide0' + i++)
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quos consectetur id maxime ullam dolorem nobis dicta minus delectus. Ad, natus quam error autem? Veniam, ipsa id dolor ad incidunt!
+      .separador
+      #trabajos-container
+        each val, index in coleccion
+          a(href = coleccion[index].valores)
+            .trabajo(class = coleccion[index].valores)
+              p.titulo=coleccion[index].titulo
+      //fin de trabajos-container
+
+      #colecciones-container
+        each col, index in coleccion
+          .coleccion-container
+            .galeria(id=coleccion[index].valores)
+              -var i = coleccion[index].imgs
+              -var img = 0
+              while img++ < i
+                img(src='img/trabajo/coleccion'+(index+1)+'-'+img+'.jpg' width='400' alt='coleccion'+(index+1)+'-'+img)
+            //fin de galeria
+            .descripcion
+              h3=coleccion[index].titulo
+              p aquii Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ad beatae ducimus aliquid dolore. Repellat obcaecati dolorem quidem sequi sed esse dolor dignissimos deleniti nostrum vel! Mollitia culpa, qui distinctio.
+              .controles
+                a.anterior(href='#') Anterior
+                a.siguiente(href='#') Siguiente
+              .cerrar
+                a(href='#') Cerrar
+            // fin de descripcion
+          //fin de coleccion-container
+
+      //fin de colecciones-container
+
+    //fin seccion-trabajo
+    section.seccion#seccion-quiensoy
+      h2 Quien Soy
+    //fin seccion-quiensoy
+    section.seccion#seccion-contacto
+      h2 Contacto
+    //fin seccion-contacto
+
+  //fin de main-container
+
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js', type='text/javascript')
+  script(type="text/javascript") if(typeof jQuery==='undefined'){document.write(unescape("<scri"+"pt src='js/jquery-2.1.1.min.js'type='text/javascript'></scri"+"pt>"));}
+  //script(src='scripts/main.js' type='text/javascript')
+  script(src='scripts/jquery.slider.js' type='text/javascript')
+  script(src='scripts/galeria.js' type='text/javascript')
+  script.
+    $(document).on('ready', function(){
+      $('#slider-miniatura').slider({time:10000});
+    });
+
+// fin de body

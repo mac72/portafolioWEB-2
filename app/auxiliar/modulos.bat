@@ -1,8 +1,7 @@
 @echo on
 cd C:\xampp\htdocs\proyectos\portafolioWEB-2
-pause
+
 npm install --save-dev gulp
-pause
 npm install --save-dev gulp-connect
 npm install --save-dev connect-history-api-fallback
 npm install --save-dev gulp-jshint
@@ -14,5 +13,4 @@ npm install --save-dev gulp-minify-css
 npm install --save-dev gulp-stylus
 npm install --save-dev nib
 npm install --save-dev gulp-jade
-pause
 exit
