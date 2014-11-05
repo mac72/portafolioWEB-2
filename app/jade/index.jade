@@ -75,6 +75,18 @@ body
     //fin seccion-trabajo
     section.seccion#seccion-quiensoy
       h2 Quien Soy
+      #foto-autor
+        img(src="img/profile.jpg" alt='foto autor')
+        #descripcion-inicial
+          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore recusandae, corporis veniam ex similique magnam, consectetur adipisicing elit.
+      .separador
+      #acordeon-container
+        each curriculum,index in [{titulo:'Estudios', contenido:'<img src="img/escuela.jpg" width="100%" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quasi culpa officiis esse eos magnam nesciunt aperiam, iusto tenetur, quas harum ducimus est odio, eligendi natus, doloribus tempore qui architecto.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur magni dolor consectetur culpa optio! Quibusdam a amet illum consectetur libero, ut alias ab dolores consequuntur, harum debitis recusandae assumenda. Odit.</p>'}, {titulo:'Experiencia profesional', contenido:"<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ex ipsum itaque ipsa, praesentium quia pariatur esse. Ex cumque eius maxime nulla vitae at recusandae, inventore, saepe nisi vel omnis.</p><p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>"}, {titulo: 'Clientes frecuentes', contenido:'<p>Quae ea distinctio animi debitis quod voluptatibus minima doloribus, alias perspiciatis quam quasi vel asperiores! Dicta, perferendis architecto laudantium illum cum earum.</p><ul><li>Sabritas</li><li>Nike</li><li>Apple</li><li>Gobierno del Estado</li><li>TV Azteca</li><li>Google</li><li>SHCP</li><li>TEC Milenium</li></ul>'}, {titulo:'Reconocimientos', contenido:'<p>Facilis quaerat sit maiores fuga ratione minima eveniet, iure inventore, ullam molestias omnis totam animi et atque vero. Accusamus distinctio, modi dolorem.</p><p>Ipsum asperiores, temporibus numquam explicabo alias maxime repellendus quos. At aperiam temporibus, quis ipsum eius, inventore qui maiores non obcaecati dignissimos perferendis.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat libero esse aperiam ab laborum porro consequuntur fuga delectus iste optio, vel perferendis voluptatum, natus quos dicta a, aut blanditiis. Nostrum.</p>'}]
+          .tab
+            .titulo #{curriculum.titulo}
+            .contenido !{curriculum.contenido}
+
+        // fin de acordeon-container
     //fin seccion-quiensoy
     section.seccion#seccion-contacto
       h2 Contacto
@@ -83,13 +95,17 @@ body
   //fin de main-container
 
   script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js', type='text/javascript')
-  script(type="text/javascript") if(typeof jQuery==='undefined'){document.write(unescape("<scri"+"pt src='js/jquery-2.1.1.min.js'type='text/javascript'></scri"+"pt>"));}
+  script(type='text/javascript').
+    if(typeof jQuery==='undefined'){document.write(unescape("<scri"+"pt src='js/jquery-2.1.1.min.js'type='text/javascript'></scri"+"pt>"));}
   //script(src='scripts/main.js' type='text/javascript')
   script(src='scripts/jquery.slider.js' type='text/javascript')
   script(src='scripts/galeria.js' type='text/javascript')
+  script(src='scripts/jquery.slider.js' type='text/javascript')
+  script(src='scripts/jquery.acordeon.js' type='text/javascript')
   script.
     $(document).on('ready', function(){
       $('#slider-miniatura').slider({time:10000});
+      $('#acordeon-container').acordeon;
     });
 
 // fin de body

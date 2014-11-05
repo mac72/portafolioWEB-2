@@ -31,6 +31,7 @@ h2 {
   position: fixed;
   text-align: center;
   width: 200px;
+  z-index: 1;
 }
 #menu-container #logo-menu {
   padding-top: 2rem;
@@ -145,98 +146,98 @@ h2 {
   transition: all 0.5s;
 }
 #seccion-trabajo #trabajos-container a .trabajo.acuarela {
-  background: url("../mg/fondo-trabajo.png"), url("../img/trabajo/coleccion1-1.jpg");
+  background: url("../img/fondo-trabajo.png"), url("../img/trabajo/coleccion1-1.jpg");
   background-position: center center, 0 0;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   background-size: 100%;
 }
 #seccion-trabajo #trabajos-container a .trabajo.tinta {
-  background: url("../mg/fondo-trabajo.png"), url("../img/trabajo/coleccion2-1.jpg");
+  background: url("../img/fondo-trabajo.png"), url("../img/trabajo/coleccion2-1.jpg");
   background-position: center center, 0 0;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   background-size: 100%;
 }
 #seccion-trabajo #trabajos-container a .trabajo.abecedario {
-  background: url("../mg/fondo-trabajo.png"), url("../img/trabajo/coleccion3-1.jpg");
+  background: url("../img/fondo-trabajo.png"), url("../img/trabajo/coleccion3-1.jpg");
   background-position: center center, 0 0;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   background-size: 100%;
 }
 #seccion-trabajo #trabajos-container a .trabajo.dragones {
-  background: url("../mg/fondo-trabajo.png"), url("../img/trabajo/coleccion4-1.jpg");
+  background: url("../img/fondo-trabajo.png"), url("../img/trabajo/coleccion4-1.jpg");
   background-position: center center, 0 0;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   background-size: 100%;
 }
 #seccion-trabajo #trabajos-container a .trabajo.dulces {
-  background: url("../mg/fondo-trabajo.png"), url("../img/trabajo/coleccion5-1.jpg");
+  background: url("../img/fondo-trabajo.png"), url("../img/trabajo/coleccion5-1.jpg");
   background-position: center center, 0 0;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   background-size: 100%;
 }
 #seccion-trabajo #trabajos-container a .trabajo.retratos {
-  background: url("../mg/fondo-trabajo.png"), url("../img/trabajo/coleccion6-1.jpg");
+  background: url("../img/fondo-trabajo.png"), url("../img/trabajo/coleccion6-1.jpg");
   background-position: center center, 0 0;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   background-size: 100%;
 }
 #seccion-trabajo #trabajos-container a .trabajo.revistas {
-  background: url("../mg/fondo-trabajo.png"), url("../img/trabajo/coleccion7-1.jpg");
+  background: url("../img/fondo-trabajo.png"), url("../img/trabajo/coleccion7-1.jpg");
   background-position: center center, 0 0;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   background-size: 100%;
 }
 #seccion-trabajo #trabajos-container a .trabajo.sitiowww {
-  background: url("../mg/fondo-trabajo.png"), url("../img/trabajo/coleccion8-1.jpg");
+  background: url("../img/fondo-trabajo.png"), url("../img/trabajo/coleccion8-1.jpg");
   background-position: center center, 0 0;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   background-size: 100%;
 }
 #seccion-trabajo #trabajos-container a .trabajo.city {
-  background: url("../mg/fondo-trabajo.png"), url("../img/trabajo/coleccion9-1.jpg");
+  background: url("../img/fondo-trabajo.png"), url("../img/trabajo/coleccion9-1.jpg");
   background-position: center center, 0 0;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   background-size: 100%;
 }
 #seccion-trabajo #trabajos-container a .trabajo.influencia {
-  background: url("../mg/fondo-trabajo.png"), url("../img/trabajo/coleccion10-1.jpg");
+  background: url("../img/fondo-trabajo.png"), url("../img/trabajo/coleccion10-1.jpg");
   background-position: center center, 0 0;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   background-size: 100%;
 }
 #seccion-trabajo #trabajos-container a .trabajo.luces {
-  background: url("../mg/fondo-trabajo.png"), url("../img/trabajo/coleccion11-1.jpg");
+  background: url("../img/fondo-trabajo.png"), url("../img/trabajo/coleccion11-1.jpg");
   background-position: center center, 0 0;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   background-size: 100%;
 }
 #seccion-trabajo #trabajos-container a .trabajo.libros {
-  background: url("../mg/fondo-trabajo.png"), url("../img/trabajo/coleccion12-1.jpg");
+  background: url("../img/fondo-trabajo.png"), url("../img/trabajo/coleccion12-1.jpg");
   background-position: center center, 0 0;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   background-size: 100%;
 }
 #seccion-trabajo #trabajos-container a .trabajo.flat {
-  background: url("../mg/fondo-trabajo.png"), url("../img/trabajo/coleccion13-1.jpg");
+  background: url("../img/fondo-trabajo.png"), url("../img/trabajo/coleccion13-1.jpg");
   background-position: center center, 0 0;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   background-size: 100%;
 }
 #seccion-trabajo #trabajos-container a .trabajo.rostroscolor {
-  background: url("../mg/fondo-trabajo.png"), url("../img/trabajo/coleccion14-1.jpg");
+  background: url("../img/fondo-trabajo.png"), url("../img/trabajo/coleccion14-1.jpg");
   background-position: center center, 0 0;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
@@ -316,4 +317,49 @@ h2 {
   -webkit-background-size: 32px;
   background-size: 32px;
   padding: 10px 28px;
+}
+/***** Seccion Quien soy******/
+#seccion-quiensoy #foto-autor {
+  text-align: center;
+}
+#seccion-quiensoy #foto-autor img {
+  margin-top: 2rem;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+#seccion-quiensoy #foto-autor #descripcion-inicial {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  padding-top: 1.5rem;
+}
+#seccion-quiensoy #acordeon-container .tab {
+  border-bottom: solid 1px #ccc;
+}
+#seccion-quiensoy #acordeon-container .tab:first-child {
+  border-top: solid 1px #ccc;
+}
+#seccion-quiensoy #acordeon-container .tab .titulo {
+  background-image: url("../img/arrow-button.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+  -moz-background-size: 40px 40px;
+  -webkit-background-size: 40px 40px;
+  background-size: 40px 40px;
+  font-weight: bolder;
+  padding: 2rem 1rem;
+}
+#seccion-quiensoy #acordeon-container .tab .titulo:hover {
+  background-color: #e0deca;
+  -moz-background-size: 40px 40px;
+  -webkit-background-size: 40px 40px;
+  background-size: 40px 40px;
+  cursor: pointer;
+}
+#seccion-quiensoy #acordeon-container .tab .contenido {
+  display: none;
+  padding: 2rem 1rem;
+}
+#seccion-quiensoy #acordeon-container .tab-activa {
+  background-color: #e0deca;
 }

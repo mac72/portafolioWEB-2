@@ -15,11 +15,26 @@ $(function(){
     control = 0;
     $galeria = $('#' + $(this).attr('href'));
     total = $galeria.children().size();
-
-
-
     return false;
+  });
+  $('#seccion-trabajo #colecciones-container .coleccion-container .descripcion .cerrar a').on('click', function(){
 
+    $('#seccion-trabajo #colecciones-container').fadeOut();
+    return false;
+  });
+
+  $('#seccion-trabajo #colecciones-container .coleccion-container .descripcion .controles .siguiente').on('click', function(){
+      control = (control + 1) % total;
+      $galeria.children().hide();
+      $galeria.children().eq(control).fadeIn();
+      return false;
+  });
+
+   $('#seccion-trabajo #colecciones-container .coleccion-container .descripcion .controles .anterior').on('click', function(){
+      control = (control - 1) % total;
+      $galeria.children().hide();
+      $galeria.children().eq(control).fadeIn();
+      return false;
   });
 
 });

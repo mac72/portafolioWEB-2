@@ -38,6 +38,7 @@ h2
   position fixed
   text-align center
   width 200px
+  z-index 1
   #logo-menu
     padding-top 2rem
     #logo-name
@@ -111,6 +112,7 @@ h2
         margin 0
         padding 0
         display block
+
       #slider-miniatura
         position relative
 
@@ -142,7 +144,7 @@ h2
             $partes = acuarela, tinta, abecedario, dragones, dulces, retratos, revistas,sitiowww, city, influencia, luces, libros, flat, rostroscolor
             for $partes, $i in $partes
               &.{$partes}
-                background url(../mg/fondo-trabajo.png), url('../img/trabajo/coleccion'($i+1)'-1.jpg')
+                background url(../img/fondo-trabajo.png), url('../img/trabajo/coleccion'($i+1)'-1.jpg')
                 background-position: center center, 0 0
                 background-size 100%
 
@@ -204,6 +206,40 @@ h2
                 background-position left
                 background-size 32px
                 padding 10px 28px
+
+/***** Seccion Quien soy******/
+    #seccion-quiensoy
+      #foto-autor
+        text-align center
+        img
+          margin-top 2rem
+          border-radius 100%
+        #descripcion-inicial
+          font-style italic
+          font-weight bolder
+          font-size: 1.6rem
+          padding-top 1.5rem
+      #acordeon-container
+        .tab
+          border-bottom solid 1px #ccc
+          &:first-child
+            border-top solid 1px #ccc
+          .titulo
+            background-image url(../img/arrow-button.png)
+            background-position: center right
+            background-repeat no-repeat
+            background-size 40px 40px
+            font-weight bolder
+            padding 2rem 1rem
+            &:hover
+              background-color #E0DECA
+              background-size 40px 40px
+              cursor pointer
+          .contenido
+            display none
+            padding 2rem 1rem
+        .tab-activa
+          background-color:#E0DECA
 
 
 
